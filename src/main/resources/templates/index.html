@@ -1,53 +1,53 @@
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head th:fragment="content">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="oraculo">
-<meta name="author" content="Wjangoo">
-<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DivertidaMente">
+    <meta name="author" content="DivertidaMente">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-<title>Oráculo - Reconhecimento de Expressões</title>
 
-<!-- Bootstrap core CSS -->
-<link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <title>DivertidaMente</title>
 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.min.css">
+
+    <!--external css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/matrix-login.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.gritter.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 </head>
 <body>
-	<div class="container">
-		<div class="row main">
-			<div class="panel-heading">
-				<div class="panel-title text-center">
-					<h1 class="title">Reconhecimento de Expressão Emocional</h1>
-					<hr />
-				</div>
-			</div>
-			<div class="main-login main-center">
-				<form class="form-horizontal" method="post" action="cadastrarEntrevistado">
-					<div>
-						<label> Nome </label> 
-						<input type="text" name="nome">
-					</div>
-					<div>
-						<label> Data de Nascimento </label> 
-						<input type="text" name="nascimento">
-					</div>
-					<div>
-						<label> Sexo </label> 
-						<input type="text" name="sexo">
-					</div>
-					<div>
-						<label> Email </label> 
-						<input type="text" name="email">
-					</div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
-					</div>
-					<div class="login-register">
-						<a href="create_account.php">Create account</a> or <a href="reset_password.php">reset password</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+<div id="loginbox">
+    <form id="loginform" class="form-vertical" action="index.html">
+        <div class="control-group normal_text"><h3><a href="#"><img src="assets/img/logo.png" alt="Logo" /></a></h3></div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_lg">Nome</span><input type="text" name="nome"/>
+                    <span class="add-on bg_lr">DN</span><input type="date" name="nascimento" placeholder="Data de Nascimento" />
+
+                    <span class="add-on bg_ly">Email</span></i></span><input type="email" name="nascimento" placeholder="Email" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <span class="pull-center"><a href="#" class="flip-link btn btn-info" id="to-recover">Lost password?</a></span>
+            <span class="pull-right"><a type="submit" href="index.html" class="btn btn-success" /> Login</a></span>
+        </div>
+    </form>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/matrix.login.js"></script>
 </body>
+
 </html>
+

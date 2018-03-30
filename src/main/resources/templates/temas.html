@@ -1,0 +1,55 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="content">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="oraculo">
+<meta name="author" content="Wjangoo">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title>Oráculo - Reconhecimento de Expressões</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row main">
+			<div class="panel-heading">
+				<div class="panel-title text-center">
+					<h1 class="title">Adicionar Expressões</h1>
+					<hr />
+				</div>
+			</div>
+			<div class="main-login main-center">
+				<form class="form-horizontal" method="post" action="/adminAssunto/Add">
+					<div>
+						<label> Nome </label>
+						<input type="text" name="nome">
+					</div>
+					<div>
+						<label>Status </label>
+						<select name="status" class="form-control" required>
+							<option value="">Selecione...</option>
+							<option value="Inválido"> Inválido </option>
+							<option value="Inválido-Temporariamente"> Inválido-Temporariamente</option>
+							<option value="Válido"> Válido</option>
+						</select>
+					</div>
+
+					<div>
+						<label> Comentário </label>
+						<input type="text" name="comentario">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
+					</div>
+					<div class="login-register">
+						<a href="create_account.php">Create account</a> or <a href="reset_password.php">reset password</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

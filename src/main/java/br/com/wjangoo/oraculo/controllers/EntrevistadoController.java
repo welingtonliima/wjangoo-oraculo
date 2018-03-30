@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import br.com.wjangoo.oraculo.models.Entrevistado;
+import br.com.wjangoo.oraculo.models.pesquisa.Entrevistado;
 import br.com.wjangoo.oraculo.services.EntrevistadoSerive;
 
 @Controller
